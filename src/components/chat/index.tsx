@@ -70,7 +70,7 @@ export const Chat = () => {
     <div className={styles.wrapper}>
       <Phones />
       <div className={styles.chat}>
-        <div>номер : {currentChat?.phoneNumber}</div>
+        <div>номер : {currentChat?.phoneNumber || phoneNumber}</div>
         <div className={styles.messages}>
           {currentChat?.messages?.map((e) => {
             return (

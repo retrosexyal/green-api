@@ -17,3 +17,7 @@ WhatsApp
 Сообщения а также idInstance, apiTokenInstance сохраняются в localstorage
 Очисту чата можно осуществить нажав на кнопку "clean history"
 Сменить idInstance, apiTokenInstance можно путем нажатия на кнопку logout
+
+### Ссылка не деплой
+
+https://creative-nasturtium-7abde2.netlify.app/

@@ -23,7 +23,6 @@ export const Main = () => {
   const storageToken = localStorage.getItem("apiTokenInstance");
 
   useEffect(() => {
-    console.log("useEffect", login.id, login.token);
     if (login.id && login.token) {
       const interval = setInterval(() => {
         dispatch(
@@ -32,13 +31,13 @@ export const Main = () => {
             apiTokenInstance: login.token,
           })
         );
-        const test = handleChat(receiveNotification!);
-        if (test?.delete) {
+        const msg = handleChat(receiveNotification!);
+        if (msg?.delete) {
           dispatch(
             fetchDeleteData({
               idInstance: login.id,
               apiTokenInstance: login.token,
-              id: test.delete,
+              id: msg.delete,
             })
           );
         }
@@ -51,7 +50,6 @@ export const Main = () => {
   }, [receiveNotification]);
 
   useLayoutEffect(() => {
-    console.log(status);
     if (storageId !== "" && storageToken !== "") {
       dispatch(setAuthData({ id: storageId!, token: storageToken! }));
       dispatch(

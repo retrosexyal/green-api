@@ -26,3 +26,11 @@ https://creative-nasturtium-7abde2.netlify.app/
 
 ![Login page](./screenshots/login.png)
 ![Main page](./screenshots/main.png)
+
+##### Скриншоты
+
+Для локального запуска приложения необходимо
+
+1. Склонировать ребозиторий https://github.com/retrosexyal/green-api.git
+2. Установить необходимые модули при помощи npm i
+3. Запустить скрипт npm start

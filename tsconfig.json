@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["dom", "es2017"],
+    "jsx": "react",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "types": ["node", "webpack-env"]
+  },
+  "include": ["src", "./custom.d.ts"],
+  "exclude": ["node_modules"]
+}

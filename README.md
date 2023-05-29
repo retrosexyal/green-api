@@ -21,3 +21,8 @@ WhatsApp
 ### Ссылка не деплой
 
 https://creative-nasturtium-7abde2.netlify.app/
+
+#### Скриншоты
+
+![Login page](./screenshots/login.png)
+![Main page](./screenshots/main.png)

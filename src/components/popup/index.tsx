@@ -15,7 +15,7 @@ export const PopUp = () => {
   useEffect(() => {
     if (error) {
       setIsHidden(true);
-    }
+    } else setIsHidden(false);
   }, [error, status]);
 
   return (

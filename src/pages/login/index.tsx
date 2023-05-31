@@ -44,11 +44,12 @@ export const Login = () => {
         />
       </label>
       <button onClick={handleLogin}>Войти</button>
-      {statusInstance &&
-        status === DataStatus.Loaded &&
-        idInstance &&
-        apiTokenInstance && <Navigate to={ROUTES.MAIN} replace={true} />}
-      {status === DataStatus.Error && <div>Введите корректные ID и Token</div>}
+      {statusInstance && status === DataStatus.Loaded && (
+        <Navigate to={ROUTES.MAIN} replace={true} />
+      )}
+      {status === DataStatus.Error && (
+        <span>Введите корректные ID и Token</span>
+      )}
     </div>
   );
 };

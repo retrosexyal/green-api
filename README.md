@@ -27,7 +27,7 @@ https://creative-nasturtium-7abde2.netlify.app/
 ![Login page](./screenshots/login.png)
 ![Main page](./screenshots/main.png)
 
-##### Скриншоты
+##### Инструкцию для локального запуска
 
 Для локального запуска приложения необходимо
 

@@ -50,7 +50,11 @@ export const Main = () => {
   }, [receiveNotification]);
 
   useLayoutEffect(() => {
-    if (storageId !== "" && storageToken !== "") {
+    if (
+      storageId !== "" &&
+      storageToken !== "" &&
+      status !== DataStatus.Loaded
+    ) {
       dispatch(setAuthData({ id: storageId!, token: storageToken! }));
       dispatch(
         fetchAuthData({
@@ -69,7 +73,7 @@ export const Main = () => {
         login.id &&
         login.token && <Chat />}
       <>
-        {(!login.id || !login.token) && status !== DataStatus.Loading && (
+        {(!login.id || !login.token) && status !== DataStatus.Loaded && (
           <Navigate to={ROUTES.LOGIN} replace={true} />
         )}
       </>

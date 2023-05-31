@@ -35,7 +35,9 @@ const getData = createSlice({
       .addCase(
         fetchGetData.fulfilled,
         (state, action: PayloadAction<IReceiveNotification>) => {
-          state.receiveNotification = action.payload;
+          if (action.payload) {
+            state.receiveNotification = action.payload;
+          }
           state.status = DataStatus.Loaded;
         }
       )

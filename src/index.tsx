@@ -9,11 +9,9 @@ import "./styles/global.css";
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container!);
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <HashRouter>
-        <App />
-      </HashRouter>
-    </Provider>
-  </React.StrictMode>
+  <Provider store={store}>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </Provider>
 );

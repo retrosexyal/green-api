@@ -47,6 +47,7 @@ const sendData = createSlice({
         (state, action: PayloadAction<string>) => {
           state.idMessage = action.payload;
           state.status = DataStatus.Loaded;
+          state.error = "";
         }
       )
       .addCase(fetchSendData.rejected, (state, action) => {

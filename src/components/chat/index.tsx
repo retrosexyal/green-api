@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 import { useAppDispatch, useAppSelector } from "../../store";
-import { fetchHistoryData } from "../../store/slices/historySlice";
-
-import { DataStatus } from "../../constants/constants";
 
 import styles from "./chat.module.scss";
 import { fetchSendData } from "../../store/slices/sendSlice";

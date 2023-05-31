@@ -15,6 +15,7 @@ export const fetchAuthData = createAsyncThunk(
   "authData/setAuthData",
   async (payload: { idInstance: string; apiTokenInstance: string }) => {
     const { idInstance, apiTokenInstance } = payload;
+
     const responce = await axios.get(
       `https://api.green-api.com/waInstance${idInstance}/getStateInstance/${apiTokenInstance}`
     );
@@ -54,7 +55,7 @@ const authData = createSlice({
           state.status = DataStatus.Loaded;
         }
       )
-      .addCase(fetchAuthData.rejected, (state) => {
+      .addCase(fetchAuthData.rejected, (state, action) => {
         state.status = DataStatus.Error;
       });
   },

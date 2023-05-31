@@ -20,9 +20,7 @@ module.exports = {
             loader: "css-loader",
             options: {
               importLoaders: 1,
-              modules: {
-                mode: "local",
-              },
+              modules: true,
             },
           },
           {

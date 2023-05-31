@@ -7,7 +7,6 @@ export const PopUp = () => {
   const { status, error } = useAppSelector((state) => state.send);
 
   const handleShow = (e: React.MouseEvent<HTMLDivElement>) => {
-    console.log(e.target);
     if ((e.target as HTMLElement).getAttribute("data-id") === "close") {
       setIsHidden(false);
     }
